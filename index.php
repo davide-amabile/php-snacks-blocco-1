@@ -49,17 +49,6 @@ $matches = [
       }
       ?>
     </p>
-
-    <h2>SNACK 2</h2>
-    <p>
-      <?php
-      $nome= $_GET["name"];
-      $mail= $_GET["mail"];
-      $age = $_GET["age"];
-
-      echo $name.$mail.$age;
-       ?>
-    </p>
   </head>
   <body>
 

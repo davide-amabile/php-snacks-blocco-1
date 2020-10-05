@@ -45,8 +45,8 @@ $matches = [
     <p>
       <?php
       // creare ciclo per stampare tutti risultati
-       for ($i = 0; $i<=count($matches); $i++){
-        echo  $matches[$i]["home"]." - ".$matches[$i]["away"].":"." ".$matches[$i]["score_home"]." - ".$matches[$i]["score_away"];
+       for ($i = 0; $i<count($matches); $i++){
+        echo  $matches[$i]["home"]." - ".$matches[$i]["away"].":"." ".$matches[$i]["score_home"]." - ".$matches[$i]["score_away"]."<br>";
       }
       ?>
     </p>

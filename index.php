@@ -1,5 +1,5 @@
 <?php
-
+// snack 1
 // creare un array matches
 $matches = [
   // creare più array con proprietà nomi squadre e punteggio
@@ -32,8 +32,6 @@ $matches = [
   ],
 ];
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +39,8 @@ $matches = [
   <head>
     <meta charset="utf-8">
     <title>snacks</title>
-    <h1>SNACK 1</h1>
+    <h2>SNACK 1</h2>
+    <h3>Risultati partite di basket</h3>
     <p>
       <?php
       // creare ciclo per stampare tutti risultati
@@ -49,6 +48,17 @@ $matches = [
         echo  $matches[$i]["home"]." - ".$matches[$i]["away"].":"." ".$matches[$i]["score_home"]." - ".$matches[$i]["score_away"]."<br>";
       }
       ?>
+    </p>
+
+    <h2>SNACK 2</h2>
+    <p>
+      <?php
+      $nome= $_GET["name"];
+      $mail= $_GET["mail"];
+      $age = $_GET["age"];
+
+      echo $name.$mail.$age;
+       ?>
     </p>
   </head>
   <body>

@@ -20,11 +20,11 @@ $_GET["age"];
      <?php
        // fare i controlli sui GET
        $controll= "";
-       if(strlen($_GET["name"]) <= 3 ){
-         $control= "Accesso negato";
+       if(strlen($_GET["name"]) > 3 && strpos($_GET["mail"], "@") &&  ){
+         $control= "Accesso riuscito";
          echo $control;
        }else{
-         $control="Accesso riuscito";
+         $control="Accesso negato";
          echo $control;
        }
      ?>
